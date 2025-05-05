@@ -8,15 +8,30 @@ backgroundColor= "#000000"
 left, middle, right = st.columns(3)
  
 if st.button("Крутить"):
-  time.sleep(1)
   x = random.randint(1,3)
-  left.write(x)
+  if x ==1:
+    left.image("7.png")
+  if x ==2:
+    left.image("lemon.png")
+  if x ==3:
+    left.image("vishna.png") 
   y = random.randint(1,3)
-  middle.write(y)
+  if y ==1:
+    middle.image("7.png")
+  if y ==2:
+    middle.image("lemon.png")
+  if y ==3:
+    middle.image("vishna.png") 
+ 
   z = random.randint(1,3)
-  right.write(z)
+  if z ==1:
+    right.image("7.png")
+  if z ==2:
+    right.image("lemon.png")
+  if z ==3:
+    right.image("vishna.png") 
   if x== y and x == z and z == y:
-    # st.balloons()
+    st.balloons()
     st.write("# ВЫ ВЫИГРАЛИ")
     st.video("document_5436337962805651912.mp4")
     time.sleep(3)
