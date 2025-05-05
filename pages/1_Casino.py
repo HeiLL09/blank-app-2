@@ -5,7 +5,7 @@ st.set_page_config(page_title="Casino", page_icon="🎰")
 st.markdown("# Casino")
 st.sidebar.header("Smurfik casino")
 backgroundColor= "#000000"
-left, middle, right = st.columns(3)
+left, middle, right = st.columns(3, gap="small")
  
 if st.button("Крутить"):
   x = random.randint(1,3)
